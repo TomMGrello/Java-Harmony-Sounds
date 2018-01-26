@@ -1,6 +1,7 @@
 package soundutil;
 import javax.sound.sampled.*;
 
+//https://stackoverflow.com/questions/3780406/how-to-play-a-sound-alert-in-a-java-application
 public class SoundUtils {
 	public static float SAMPLE_RATE = 8000f;
 

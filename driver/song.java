@@ -1,0 +1,141 @@
+package driver;
+import soundutil.*;;
+
+public class song {
+
+	public static final double C0 = 16.35;
+	public static final double CSharp0 = 17.32;
+	public static final double D0 = 18.35;
+	public static final double DSharp0 = 19.45;
+	public static final double E0 = 20.60;
+	public static final double F0 = 21.83;
+	public static final double FSharp0 = 23.12;
+	public static final double G0 = 24.50;
+	public static final double GSharp0 = 25.96;
+	public static final double A0 = 27.50;
+	public static final double ASharp0 = 29.14;
+	public static final double B0 = 30.87;
+	public static final double C1 = 32.70;
+	public static final double CSharp1 = 34.65;
+	public static final double D1 = 36.71;
+	public static final double DSharp1 = 38.89;
+	public static final double E1 = 41.20;
+	public static final double F1 = 43.65;
+	public static final double FSharp1 = 46.25;
+	public static final double G1 = 49.00;
+	public static final double GSharp1 = 51.91;
+	public static final double A1 = 55.00;
+	public static final double ASharp1 = 58.27;
+	public static final double B1 = 61.74;
+	public static final double C2 = 65.41;
+	public static final double CSharp2 = 69.30;
+	public static final double D2 = 73.42;
+	public static final double DSharp2 = 77.78;
+	public static final double E2 = 82.41;
+	public static final double F2 = 87.31;
+	public static final double FSharp2 = 92.50;
+	public static final double G2 = 98.00;
+	public static final double GSharp2 = 103.83;
+	public static final double A2 = 110.00;
+	public static final double ASharp2 = 116.54;
+	public static final double B2 = 123.47;
+	public static final double C3 = 130.81;
+	public static final double CSharp3 = 138.59;
+	public static final double D3 = 146.83;
+	public static final double DSharp3 = 155.56;
+	public static final double E3 = 164.81;
+	public static final double F3 = 174.61;
+	public static final double FSharp3 = 185.00;
+	public static final double G3 = 196.00;
+	public static final double GSharp3 = 207.65;
+	public static final double A3 = 220.00;
+	public static final double ASharp3 = 233.08;
+	public static final double B3 = 246.94;
+	public static final double C4 = 261.63;
+	public static final double CSharp4 = 277.18;
+	public static final double D4 = 293.66;
+	public static final double DSharp4 = 311.13;
+	public static final double E4 = 329.63;
+	public static final double F4 = 349.23;
+	public static final double FSharp4 = 369.99;
+	public static final double G4 = 392.00;
+	public static final double GSharp4 = 415.30;
+	public static final double A4 = 440.00;
+	public static final double ASharp4 = 466.16;
+	public static final double B4 = 493.88;
+	public static final double C5 = 523.25;
+	public static final double CSharp5 = 554.37;
+	public static final double D5 = 587.33;
+	public static final double DSharp5 = 622.25;
+	public static final double E5 = 659.25;
+	public static final double F5 = 698.46;
+	public static final double FSharp5 = 739.99;
+	public static final double G5 = 783.99;
+	public static final double GSharp5 = 830.61;
+	public static final double A5 = 880.00;
+	public static final double ASharp5 = 932.33;
+	public static final double B5 = 987.77;
+	public static final double C6 = 1046.50;
+	public static final double CSharp6 = 1108.73;
+	public static final double D6 = 1174.66;
+	public static final double DSharp6 = 1244.51;
+	public static final double E6 = 1318.51;
+	public static final double F6 = 1396.91;
+	public static final double FSharp6 = 1479.98;
+	public static final double G6 = 1567.98;
+	public static final double GSharp6 = 1661.22;
+	public static final double A6 = 1760.00;
+	public static final double ASharp6 = 1864.66;
+	public static final double B6 = 1975.53;
+	public static final double C7 = 2093.00;
+	public static final double CSharp7 = 2217.46;
+	public static final double D7 = 2349.32;
+	public static final double DSharp7 = 2489.02;
+	public static final double E7 = 2637.02;
+	public static final double F7 = 2793.83;
+	public static final double FSharp7 = 2959.96;
+	public static final double G7 = 3135.96;
+	public static final double GSharp7 = 3322.44;
+	public static final double A7 = 3520.00;
+	public static final double ASharp7 = 3729.31;
+	public static final double B7 = 3951.07;
+	public static final double C8 = 4186.01;
+	public static final double CSharp8 = 4434.92;
+	public static final double D8 = 4698.63;
+	public static final double DSharp8 = 4978.03;
+	public static final double E8 = 5274.04;
+	public static final double F8 = 5587.65;
+	public static final double FSharp8 = 5919.91;
+	public static final double G8 = 6271.93;
+	public static final double GSharp8 = 6644.88;
+	public static final double A8 = 7040.00;
+	public static final double ASharp8 = 7458.62;
+	public static final double B8 = 7902.13;
+	
+	public static void main(String[] args) throws Exception {
+		AudioPlayer ap = new AudioPlayer();
+
+
+		ap.play(C4, 500, 1.0);
+		ap.play(E4, 500, 1.0);
+		ap.play(G4, 500, 1.0);
+		ap.play(B4, 500, 1.0);
+		
+		ap.playHarmony(C4, 50000, 1.0);
+		ap.playHarmony(E4, 50000, 1.0);
+		ap.playHarmony(G4, 50000, 1.0);
+		ap.playHarmony(B4, 50000, 1.0);
+		Thread.sleep(1000);
+		ap.play(C5, 125, 1.0);
+		ap.play(E5, 125, 1.0);
+		ap.play(G5, 125, 1.0);
+		ap.play(B5, 125, 1.0);
+		
+		ap.playHarmony(C5, 50000, 1.0);
+		ap.playHarmony(E5, 50000, 1.0);
+		ap.playHarmony(G5, 50000, 1.0);
+		ap.playHarmony(B5, 50000, 1.0);
+
+	}
+
+}
